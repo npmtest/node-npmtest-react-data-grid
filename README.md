@@ -1,6 +1,6 @@
 # npmtest-react-data-grid
 
-#### basic test coverage for  react-data-grid (v2.0.30)  [![npm package](https://img.shields.io/npm/v/npmtest-react-data-grid.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-data-grid) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-data-grid.svg)](https://travis-ci.org/npmtest/node-npmtest-react-data-grid)
+#### basic test coverage for  react-data-grid (v2.0.31)  [![npm package](https://img.shields.io/npm/v/npmtest-react-data-grid.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-data-grid) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-data-grid.svg)](https://travis-ci.org/npmtest/node-npmtest-react-data-grid)
 
 #### The grid core
 
@@ -35,16 +35,13 @@
 ```json
 
 {
-    "author": {
-        "name": "Adazzle"
-    },
-    "dependencies": {},
+    "name": "react-data-grid",
+    "version": "2.0.31",
     "description": "The grid core",
-    "devDependencies": {},
-    "directories": {},
-    "dist": {
-        "shasum": "655126e9cad85f7eda17e317e974521a4f5eab49",
-        "tarball": "https://registry.npmjs.org/react-data-grid/-/react-data-grid-2.0.30.tgz"
+    "scripts": {
+        "beforepublish": "node ../../ci/publish/replacePackageEntry react-data-grid true",
+        "postpublish": "node ../../ci/publish/replacePackageEntry react-data-grid",
+        "test": "npm test"
     },
     "keywords": [
         "react",
@@ -52,23 +49,9 @@
         "data-grid",
         "core"
     ],
+    "author": "Adazzle",
     "license": "MIT",
-    "maintainers": [
-        {
-            "name": "adazzle"
-        },
-        {
-            "name": "malonecj"
-        }
-    ],
-    "name": "react-data-grid",
-    "optionalDependencies": {},
-    "scripts": {
-        "beforepublish": "node ../../ci/publish/replacePackageEntry react-data-grid true",
-        "postpublish": "node ../../ci/publish/replacePackageEntry react-data-grid",
-        "test": "npm test"
-    },
-    "version": "2.0.30"
+    "bin": {}
 }
 ```
 
